@@ -1,0 +1,231 @@
+.gameLuckySection {
+  padding-block: 40px;
+  text-align: center;
+  padding-block: var(--spacing-lg);
+  background-image: linear-gradient(to bottom, black 0%, transparent 50%), 
+        url(/src/assets/images/GamesLuckySpadesGradientx2.png);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.luckyLogoContainer {
+  margin-bottom: var(--spacing-lg);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.luckyLogo {
+  height: 60px;
+  width: auto;
+  background-color: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.luckyLogoContainer img:first-child,
+.luckyLogoContainer img:last-child {
+  position: absolute;
+}
+
+.luckyLogoContainer img:first-child {
+  top: 50%;
+  transform: translateY(calc(-50% - 13px));
+  right: 0;
+  width: calc(50% - 25px);
+}
+
+.luckyLogoContainer img:last-child {
+  top: 50%;
+  transform: translateY(calc(-50% + 13px));
+  left: 0;
+  width: calc(50% - 50px);
+}
+
+.jackpotWrapper {
+  margin-bottom: var(--spacing-lg);
+}
+
+.jackpotContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.jackpotContainer::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 12px;
+  background-image: url(/src/assets/images/GamesLuckySpadesGreenLinex2.png);
+  background-size: cover;
+  width: calc(50% + 140px);
+}
+
+.jackpotContent {
+  position: relative;
+  z-index: 2;
+  transform: translateY(29px);
+}
+
+.jackpotContainer .spadeIcon {
+  transform: translateX(-30px);
+}
+
+.jackpotContent .ovalLabel {
+  padding: 3px 52px;
+}
+
+.jackpotAmount {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-black);
+}
+
+.minorWrapper {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  margin-bottom: var(--spacing-lg);
+}
+
+.minorContainer {
+  grid-column: span 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 426px) {
+  .minorContainer {
+    grid-column: span 9;
+  }
+}
+
+.minorContainer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 12px;
+  background-image: url(/src/assets/images/GamesLuckySpadesGreenLinex2.png);
+  background-size: cover;
+  width: calc(50% + 140px);
+}
+
+.minorContainer .spadeIcon {
+  height: 20px;
+  transform: translateX(35px);
+  position: relative;
+  z-index: 2;
+}
+
+.minorContent {
+  position: relative;
+  z-index: 2;
+  transform: translateY(25px);
+}
+
+.minorContent .ovalLabel {
+  padding: 3px 60px;
+}
+
+.minorAmount {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-black);
+}
+
+.miniWrapper {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  margin-bottom: var(--spacing-lg);
+}
+
+.miniContainer {
+  grid-column: 6 / span 7;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+@media screen and (max-width: 426px) {
+  .miniContainer {
+    grid-column: 4 / span 9;
+  }
+}
+
+.miniContainer::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  height: 12px;
+  background-image: url(/src/assets/images/GamesLuckySpadesGreenLinex2.png);
+  background-size: cover;
+  width: calc(50% + 140px);
+}
+
+.miniContainer .spadeIcon {
+  transform: translateX(-35px);
+}
+
+.miniContent {
+  position: relative;
+  z-index: 2;
+  transform: translateY(22px);
+}
+
+.miniContent .ovalLabel {
+  padding: 3px 70px;
+}
+
+.miniAmount {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-black);
+}
+
+/* shared styles */
+.spadeIcon {
+  height: 20px;
+  position: relative;
+  z-index: 2;
+}
+.ovalContainer {
+  position: relative;
+  z-index: 2;
+}
+.ovalLabel {
+  position: absolute;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-black);
+  font-size: var(--font-size-lg);
+  letter-spacing: 2px;
+  color: var(--text-primary-color);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #26715a;
+  display: inline-block;
+  padding: 3px 52px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  box-shadow: 0 0 8px 2px #23d0a2;
+}
+.amountLine {
+  grid-column: span 12;
+  background-image: url(/src/assets/images/GamesLuckySpadesGreyLinex2.png);
+  height: 10px;
+  background-size: cover;
+}

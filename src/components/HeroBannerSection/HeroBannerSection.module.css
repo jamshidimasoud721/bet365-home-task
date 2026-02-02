@@ -1,0 +1,54 @@
+.heroSection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroImageContainer {
+  max-width: 1440px;
+}
+
+.heroImage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fadeImage {
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent),
+    linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to bottom, transparent, black 20%, black 80%, transparent),
+    linear-gradient(to right, transparent, black 20%, black 80%, transparent);
+  mask-composite: intersect;
+}
+
+.heroContent {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 599px) {
+  .heroImage {
+    height: 330px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 949px) {
+  .heroImage {
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (min-width: 950px) {
+  .heroImage {
+    object-position: center;
+  }
+}

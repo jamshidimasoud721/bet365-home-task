@@ -1,0 +1,28 @@
+.btn {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  transition: background-position .3s, border .3s, transform 0.2s, opacity 0.2s;
+  transition-timing-function: cubic-bezier(.45, 0, .55, 1), linear;
+  display: inline-block;
+  text-align: center;
+  background-size: 300% 100%;
+  background-position: 100% 0;
+  color: #000;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  background-position: 0 0;
+}
+
+.yellow {
+  background-color: var(--primary-yellow); /* Fallback */
+  background-image: linear-gradient(90deg, #fff, #fff, var(--primary-yellow), var(--primary-yellow));
+}
+
+.green {
+  background-color: var(--primary-green);
+  background-image: linear-gradient(90deg, #fff, #fff, var(--primary-green), var(--primary-green));
+}

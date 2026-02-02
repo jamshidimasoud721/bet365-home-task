@@ -1,0 +1,8 @@
+.appContainer {
+  background-color: var(--bg-color);
+}
+
+.main {
+  padding-top: var(--spacing-lg);
+  width: 100%;
+}

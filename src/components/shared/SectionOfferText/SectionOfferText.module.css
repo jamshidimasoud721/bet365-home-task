@@ -1,0 +1,9 @@
+.sectionOfferText {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-black);
+  line-height: 1.1;
+  margin-bottom: 25px;
+  color: #7fffd4;
+  text-transform: uppercase;
+  text-align: center;
+}

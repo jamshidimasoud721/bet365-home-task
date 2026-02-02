@@ -1,0 +1,100 @@
+.newsSection {
+  padding-block: var(--spacing-lg);
+}
+.newsCarouselContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-inline: var(--spacing-xs);
+}
+
+.newsCarousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; 
+  max-width: 1200px;
+  padding: var(--spacing-xxs);
+}
+
+.newsCarousel::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.newsCard {
+  background-color: #000;
+  border-radius: var(--border-radius-xl);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  position: relative;
+  aspect-ratio: 3/4;
+  flex: 0 0 200px;
+  scroll-snap-align: start;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  color: inherit;
+}
+
+.newsCard:focus-visible {
+  border: none;
+  outline: 2px solid var(--primary-green);
+}
+
+.newsImageContainer {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: calc(50% - 100px) center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.newsCard:hover .newsImageContainer ,
+.newsCard:focus-visible .newsImageContainer {
+  transform: scale(1.05);
+}
+
+.newsImageOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+}
+
+.newsContent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  z-index: 2;
+}
+
+.newsTag {
+  color: var(--primary-green);
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-extrabold);
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.newsContent h3 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 5px;
+  line-height: 1.2;
+}
+
+.newsContent p {
+  font-size: var(--font-size-sm);
+  color: #ccc;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

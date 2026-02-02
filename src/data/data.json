@@ -1,0 +1,14 @@
+{
+  "news": [
+    { "id": 1, "title": "News Story Title 1", "desc": "News Story Description", "tag": "Football" },
+    { "id": 2, "title": "News Story Title 2", "desc": "News Story Description", "tag": "Football" },
+    { "id": 3, "title": "News Story Title 3", "desc": "News Story Description", "tag": "Football" },
+    { "id": 4, "title": "News Story Title 4", "desc": "News Story Description", "tag": "Football" }
+  ],
+  "players": [
+    { "name": "Stephan Shaw", "role": "Forward", "flag": "flag1" },
+    { "name": "Alexis Richardson", "role": "Forward", "flag": "flag2" },
+    { "name": "Jane Strassmann", "role": "Forward", "flag": "flag3" },
+    { "name": "Nikithern Pinya", "role": "Forward", "flag": "flagGrey" }
+  ]
+}

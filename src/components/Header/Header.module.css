@@ -1,0 +1,15 @@
+.header {
+  background: linear-gradient(to right, var(--header-bg), var(--header-bg-light));
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+
+.logo {
+  width: auto;
+}

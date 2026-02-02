@@ -1,0 +1,54 @@
+:root {
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --bg-color: #0e1106;
+  --header-bg: #123329;
+  --header-bg-light: #1b4d3e;
+  --text-primary-color: #ffffff;
+  --text-secondary-color: #555555;
+  --primary-yellow: #fff383;
+  --primary-green: #23d0a2;
+  --card-bg: #172118;
+  --accent-green: #29b85d;
+  --border-color: #c6c8c7;
+  --line-seperator-color: #282828;
+  
+  /* Spacing */
+  --spacing-xxs: 0.5rem;
+  --spacing-xs: 1rem;
+  --spacing-sm: 1.5rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 2.5rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 3.5rem;
+  --spacing-3xl: 4rem;
+  --spacing-4xl: 4.5rem;
+
+  /* Border Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 10px;
+  --border-radius-xl: 14px;
+  
+  /* Font Sizes */
+  --font-size-xxs: 0.5rem;
+  --font-size-xs: 0.6rem;
+  --font-size-sm: 0.7rem;
+  --font-size-md: 0.8rem;
+  --font-size-base: 0.9rem;
+  --font-size-lg: 1rem;
+  --font-size-xl: 1.1rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 2.5rem;
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  /* Allow smooth transitions/animations to/from keyword sizes (e.g., auto) */
+  interpolate-size: allow-keywords;
+
+}

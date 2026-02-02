@@ -1,0 +1,32 @@
+.newCustomerSection {
+  background-image: url(/src/assets/images/MembersJoinNowGradientx2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-block: var(--spacing-lg);
+  padding-inline: var(--spacing-xs);
+  text-align: center;
+}
+
+.newCustomerContent{
+  max-width: 800px;
+  margin: 0 auto;
+}
+.newCustomerContent h1 {
+  color: var(--primary-yellow);
+}
+
+.newCustomerSubText {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-baseline);
+  line-height: 1.1;
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.footerText {
+  margin-top: 50px;
+  font-size: var(--font-size-xxs);
+  color: var(--text-secondary-color);
+  padding: 0 20px;
+}
