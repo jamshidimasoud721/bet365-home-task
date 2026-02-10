@@ -30,7 +30,7 @@
   display: flex;
   gap: 15px;
   width: max-content;
-  padding-right: var(--spacing-xs);
+  padding: var(--spacing-xxs);
 }
 
 .tab {

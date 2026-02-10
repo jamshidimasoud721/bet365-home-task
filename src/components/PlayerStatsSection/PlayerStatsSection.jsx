@@ -22,7 +22,18 @@ const PlayerStatsSection = () => {
 
   const tabs = ['All', 'Forwards', 'Midfielders', 'Defenders', 'Goalkeepers'];
   
-  const players = data.players.map(player => ({
+  const roleMap = {
+    'Forwards': 'Forward',
+    'Midfielders': 'Midfielder',
+    'Defenders': 'Defender',
+    'Goalkeepers': 'Goalkeeper'
+  };
+
+  const filteredPlayers = activeTab === 'All' 
+    ? data.players 
+    : data.players.filter(player => player.role === roleMap[activeTab]);
+
+  const players = filteredPlayers.map(player => ({
     ...player,
     flag: flagMap[player.flag]
   }));
@@ -75,9 +86,7 @@ const PlayerStatsSection = () => {
         <img src={chevronIcon} className={`${styles.chevron} ${expanded ? styles.expanded : ''}`} alt="chevron icon" />
       </button>
       
-      <div className={styles.actionContainer}>
         <LinkButton href="#" variant="yellow" title="See player markets" />
-      </div>
       </div>
     </section>
   );

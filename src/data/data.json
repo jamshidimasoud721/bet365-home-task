@@ -9,6 +9,11 @@
     { "name": "Stephan Shaw", "role": "Forward", "flag": "flag1" },
     { "name": "Alexis Richardson", "role": "Forward", "flag": "flag2" },
     { "name": "Jane Strassmann", "role": "Forward", "flag": "flag3" },
-    { "name": "Nikithern Pinya", "role": "Forward", "flag": "flagGrey" }
+    { "name": "Nikithern Pinya", "role": "Forward", "flag": "flagGrey" },
+    { "name": "James Miller", "role": "Midfielder", "flag": "flag1" },
+    { "name": "Sarah Connor", "role": "Midfielder", "flag": "flag2" },
+    { "name": "Mike Smith", "role": "Defender", "flag": "flag3" },
+    { "name": "John Doe", "role": "Defender", "flag": "flagGrey" },
+    { "name": "David Wilson", "role": "Goalkeeper", "flag": "flag1" }
   ]
 }
